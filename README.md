@@ -43,13 +43,18 @@ Each product also has a **Lens options** override and **Frame type** field in th
 
 The selected lens package and add-ons are added to the WooCommerce cart item price. Lens details are saved into cart item data and order item meta.
 
-## GitHub Sync
+## Local Development
 
-Initialize git in this workspace, commit the plugin folder, add your GitHub repository as `origin`, then push:
+This repository is the plugin root. For local WordPress testing, copy or symlink this repository folder into:
+
+```text
+wp-content/plugins/woocommerce-prescription-lenses
+```
+
+Keep changes synced to GitHub with:
 
 ```bash
-git add woocommerce-prescription-lens-options
-git commit -m "Add prescription lens options plugin"
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-git push -u origin master
+git add .
+git commit -m "Describe the update"
+git push
 ```
