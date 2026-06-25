@@ -1,0 +1,39 @@
+.wclo-admin .wclo-cards {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  margin: 20px 0;
+  max-width: 980px;
+}
+
+.wclo-admin .wclo-card {
+  background: #fff;
+  border: 1px solid #dcdcde;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.wclo-admin .wclo-card strong {
+  display: block;
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.wclo-admin .wclo-card span {
+  color: #646970;
+  display: block;
+  margin-top: 8px;
+}
+
+.wclo-grid {
+  display: grid;
+  gap: 10px 18px;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+}
+
+@media (max-width: 900px) {
+  .wclo-admin .wclo-cards,
+  .wclo-grid {
+    grid-template-columns: 1fr;
+  }
+}
