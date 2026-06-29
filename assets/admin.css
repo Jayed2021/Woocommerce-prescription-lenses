@@ -31,9 +31,105 @@
   grid-template-columns: repeat(2, minmax(220px, 1fr));
 }
 
+.wclo-repeater {
+  background: #fff;
+  border: 1px solid #dcdcde;
+  border-radius: 8px;
+  margin: 18px 0;
+  padding: 14px;
+}
+
+.wclo-repeater-heading {
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin: -2px 0 14px;
+  padding-bottom: 12px;
+}
+
+.wclo-repeater-heading h3 {
+  margin: 0 0 4px;
+}
+
+.wclo-repeater-heading p {
+  color: #646970;
+  margin: 0;
+}
+
+.wclo-repeater-rows {
+  display: grid;
+  gap: 12px;
+}
+
+.wclo-repeater-row {
+  background: #f6f7f7;
+  border: 1px solid #dcdcde;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.wclo-row-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.wclo-row-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+}
+
+.wclo-row-grid label {
+  color: #1d2327;
+  display: grid;
+  font-weight: 600;
+  gap: 5px;
+}
+
+.wclo-row-grid input,
+.wclo-row-grid select,
+.wclo-row-grid textarea {
+  font-weight: 400;
+  max-width: 100%;
+  width: 100%;
+}
+
+.wclo-row-grid .wclo-wide {
+  grid-column: 1 / -1;
+}
+
+.wclo-product-price {
+  background: #fff;
+  border: 1px solid #dcdcde;
+  border-radius: 6px;
+  display: grid;
+  gap: 5px;
+  padding: 8px 10px;
+}
+
+.wclo-product-price span {
+  color: #646970;
+  font-weight: 600;
+}
+
+.wclo-product-price strong {
+  color: #1d2327;
+  font-size: 14px;
+}
+
 @media (max-width: 900px) {
   .wclo-admin .wclo-cards,
-  .wclo-grid {
+  .wclo-grid,
+  .wclo-row-grid {
     grid-template-columns: 1fr;
+  }
+
+  .wclo-repeater-heading {
+    align-items: flex-start;
+    display: grid;
   }
 }
